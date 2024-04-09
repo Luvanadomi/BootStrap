@@ -1,0 +1,54 @@
+.bestsellers{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.bestsellers>h2{
+   margin-top:1em;
+   margin:auto;
+   text-align: center;
+   width:15%;
+
+}
+.bestsellers>h2:hover{
+    transition-duration:0.1s;
+}
+
+.bestseller-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:4em0px;
+
+}
+.bestseller{
+    display: flex;
+    flex-direction: column;
+    width:25%;
+    margin:1em;
+    transition-duration: 0.3s;
+    border:1px solid white;
+    cursor: pointer;
+}
+.bestseller>img{
+    width:100%;  
+}
+
+.bestseller{
+    
+    align-items: center;
+    
+}
+.bestseller>h5, .bestseller>p, .bestseller>span,.bestseller>button{
+    margin: 10px;
+    
+}  
+.bestseller:hover{
+    transform: translateY(-6px);
+    transition-duration: 0.5s;
+    box-shadow: 0 0 2px 2px grey;
+}
+.fa-solid{
+color: gold;
+}
