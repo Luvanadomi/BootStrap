@@ -2,6 +2,16 @@ body, html {
     width: 100%;
     overflow-x: hidden; /* Hide horizontal scrollbar */
 }
+.navbar-light {
+    background-color: #f7efe5 !important;
+}
+.footer {
+    background-color: #EAD8C0!important;
+    width:100%; 
+    margin-bottom:0;
+    padding:0;
+    flex-wrap: nowrap;
+}
 .carousel-item img {
   width: 100%;
   height: 56.25vw; /* 16:9 aspect ratio (9 / 16 * 100) */
@@ -14,7 +24,6 @@ body, html {
     border-bottom: 4px solid transparent; /* Add a transparent underline */
     transition: border-color 0.6s ease; /* Smooth transition for underline color */
 }
-
 .navbar-nav .nav-link:hover,
     .navbar-nav .nav-item.dropdown:hover .nav-link {
     border-color:  #88413c; 
@@ -27,7 +36,6 @@ body, html {
 .dropdown-menu .dropdown-item:hover {
     background-color: #88413c;
     color:#fff;
-
 }
 .bestsellers{
     height: auto;
@@ -50,7 +58,7 @@ body, html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin:4em0px;
+    margin:20px;
 
 }
 .bestseller{
@@ -107,7 +115,7 @@ color: gold;
 .photo1{
     position: absolute;
     top: 20px;
-    left: 70px; 
+    left: 70px;  
 }
 .photo2{
     position: relative;
@@ -125,3 +133,22 @@ color: gold;
 .featurette{
 padding: 50px;
 }
+#kontakto{
+    display: flex; 
+    align-items:center;
+    flex-direction: column;
+ 
+}
+#kontakto h2{
+    padding-bottom:30px;
+}
+.buttoni{
+    padding:10px;
+    background-color:#6b3431;
+    color:white;
+}
+.buttoni:hover{
+    background-color:#411e1c;
+    color:white;
+}
+ 
