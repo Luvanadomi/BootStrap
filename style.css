@@ -1,16 +1,17 @@
 body, html {
     width: 100%;
     overflow-x: hidden; /* Hide horizontal scrollbar */
+    margin:0;
+}
+.navbar-nav.navbar-center {
+      position: sticky;
 }
 .navbar-light {
     background-color: #f7efe5 !important;
 }
 .footer {
     background-color: #EAD8C0!important;
-    width:100%; 
-    margin-bottom:0;
-    padding:0;
-    flex-wrap: nowrap;
+    
 }
 .carousel-item img {
   width: 100%;
@@ -73,16 +74,21 @@ body, html {
 .bestseller>img{
     width:100%;  
 }
-
 .bestseller{
-    
     align-items: center;
-    
 }
 .bestseller>h5, .bestseller>p, .bestseller>span,.bestseller>button{
     margin: 10px;
     
 }  
+.bestseller .name{
+    font-size:15px;
+}
+@media screen and (max-width:300px){
+    .bestseller>.name {
+        font-size:10px;
+    }
+}
 .bestseller:hover{
     transform: translateY(-6px);
     transition-duration: 0.5s;
@@ -90,6 +96,9 @@ body, html {
 }
 .fa-solid{
 color: gold;
+}
+.fa-cart-shopping   {
+    color: #88413c !important;
 }
 .navbar-brand{
     font-size:40px;
@@ -146,9 +155,33 @@ padding: 50px;
     padding:10px;
     background-color:#6b3431;
     color:white;
+    margin-bottom: 20px;
 }
 .buttoni:hover{
     background-color:#411e1c;
     color:white;
 }
- 
+.shopping a{
+    padding:10px;
+    background-color:#EAD8C0;
+    color:#411e1c; 
+    text-decoration:none;
+    border-bottom: #411e1c;
+}
+.shopping a:hover{
+    background-color:rgb(202, 178, 147);
+}
+.face-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:20px;
+}
+.body-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:20px;
+}
