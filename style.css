@@ -92,7 +92,7 @@ body, html {
 .bestseller:hover{
     transform: translateY(-6px);
     transition-duration: 0.5s;
-    box-shadow: 0 0 2px 2px grey;
+    box-shadow: 0 0 2px 5px #cc9692;
 }
 .fa-solid{
 color: gold;
@@ -161,14 +161,29 @@ padding: 50px;
     background-color:#411e1c;
     color:white;
 }
-.shopping a{
+
+.add-to-cart-btn {
+    background-color: #6b3431;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    width:50px;
+    height:32px;
+    margin-bottom:0;
+    cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #411e1c;
+}
+.btn-group a{
     padding:10px;
     background-color:#EAD8C0;
     color:#411e1c; 
     text-decoration:none;
     border-bottom: #411e1c;
 }
-.shopping a:hover{
+.btn-group a:hover{
     background-color:rgb(202, 178, 147);
 }
 .face-container{
@@ -184,4 +199,10 @@ padding: 50px;
     flex-wrap: wrap;
     justify-content: center;
     margin:20px;
+}
+.cart-quantity{
+    color: #88413c !important;
+    background-color: #cc9692;
+    border-radius: 50%;
+    padding: 4px; 
 }
