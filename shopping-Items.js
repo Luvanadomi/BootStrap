@@ -1,4 +1,4 @@
-import { cart,removeItem} from "../cart.js";
+import {cart,removeItem} from "../cart.js";
 import {lines} from '../product.js';
 
     let mainHtml='';
@@ -39,13 +39,10 @@ import {lines} from '../product.js';
   });
     
 document.querySelector('.order-summary').innerHTML=mainHtml;
-}); 
-
- 
+});  
 const payment=calculateTotalSum();
 const paymentDisplay=document.querySelector('.payment-summary-money');
-paymentDisplay.innerHTML=payment;
-
+paymentDisplay.innerHTML=payment
 
 document.querySelectorAll(".delete-quantity-link").forEach((deleteLink)=>{
     deleteLink.addEventListener('click',function (event) {
@@ -59,8 +56,6 @@ document.querySelectorAll(".delete-quantity-link").forEach((deleteLink)=>{
         }
 });
 });
-
-
  function calculateTotalSum() {
   let totalPrice = 0;
   cart.forEach((item) => {
@@ -76,8 +71,6 @@ document.querySelectorAll(".delete-quantity-link").forEach((deleteLink)=>{
   });
   return totalPrice; 
 }
- 
-
  export function updateTotalSum() {
   const totalSum = calculateTotalSum();
   const totalSumDisplay = document.querySelector('.payment-summary-money');

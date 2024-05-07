@@ -4,21 +4,17 @@ export function saveData(){
     localStorage.setItem('cart',JSON.stringify(cart));
 
 }
-
 export function addProduct(productId){
     
     let matched;
-
     cart.forEach((item)=>{
         if(productId===item.productId){
             matched=item;
         }
     });
-
     if(matched){
         matched.quantity+=1;
     }else{
-
         cart.push(
             {
                 productId:  productId,
